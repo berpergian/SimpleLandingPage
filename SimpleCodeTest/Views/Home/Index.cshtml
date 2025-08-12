@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "AI dan Implementasi AI di Industri Contact Center";
+}
+
+<!-- Header -->
+<header class="text-center text-white py-5" style="background: linear-gradient(90deg, #0d6efd, #0a58ca);">
+    <div class="container">
+        <h1 class="display-5 fw-bold">AI dan Implementasi AI di Industri Contact Center</h1>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <h2 class="fw-bold">Contoh Implementasi AI</h2>
+                <p class="text-muted">Berbagai inovasi AI yang membantu industri contact center meningkatkan kinerja dan pengalaman pelanggan.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 feature-card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Chatbot & Virtual Assistant</h5>
+                        <p class="card-text">AI memungkinkan chatbot memberikan jawaban cepat untuk pertanyaan umum pelanggan, mengurangi beban agen manusia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 feature-card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Analisis Sentimen Otomatis</h5>
+                        <p class="card-text">Menggunakan Natural Language Processing (NLP) untuk memahami emosi pelanggan dan memberikan respon yang lebih tepat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 feature-card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Routing Panggilan Cerdas</h5>
+                        <p class="card-text">AI dapat mengarahkan panggilan ke agen yang paling sesuai berdasarkan keterampilan, histori pelanggan, dan tingkat urgensi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- CTA Section -->
+<section class="py-5 bg-light text-center">
+    <div class="container">
+        <h3 class="fw-bold mb-3">Siap Tingkatkan Contact Center Anda dengan AI?</h3>
+        <p class="mb-4">Dapatkan solusi AI untuk meningkatkan efisiensi, kepuasan pelanggan, dan produktivitas tim Anda.</p>
+        <a href="#kontak" class="btn btn-warning btn-lg fw-bold">Pelajari Lebih Lanjut</a>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.transition = 'transform 0.2s ease-in-out';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+}
